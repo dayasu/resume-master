@@ -54,7 +54,6 @@ body {
   margin: 0 auto;
   overflow: hidden;
   line-height: 1.5;
-  box-sizing: border-box;
   flex-flow: row wrap;
 }
 .resume .inner_resume {
@@ -229,7 +228,7 @@ code {
   height: 25px;
   font-size: 12pt;
   color: #666;
-  padding: 4px 0 1px 10px;
+  padding: 2px 0 1px 10px;
 }
 .education_column .listCommon {
   font-size: 10pt;
@@ -276,15 +275,17 @@ code {
 }
 #border_line1 {
   display: flex;
+  display: -ms-flexbox;
   width: 100%;
   border-bottom: 1.5pt solid #cccccc;
 }
 .experience {
   display: inline-block;
-  width: 540px;
+  width: 100%;
   float: left;
   margin-top: 6px;
   border-bottom: 1px dashed #ccc;
+  font-weight: bold;
 }
 .experience .project_name {
   margin: 0 0.5mm 1.5mm 1.0mm;
@@ -360,4 +361,5 @@ code {
   line-height: 1.5;
   font-weight: normal;
   text-indent: 14px;
+  margin-top: -6px;
 }
